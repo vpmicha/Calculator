@@ -1,12 +1,21 @@
+import sys
+
 def main():
     while True:
         ask = input('Calculate: ').strip()
         if '+' in ask:
-            addition(ask)
+            print(addition(ask))
         if '-' in ask:
-            subtraction(ask)
+            print(subtraction(ask))
         if '*' in ask:
-            multiplication(ask)
+            print(multiplication(ask))
         if '/' in ask:
-            division(ask)
+            print(division(ask))
 
+def addition(numbers):
+    try:
+        first, last = map(int, numbers.split('+').strip())
+    except ValueError('Not specified format'):
+        sys.exit()
+    
+    return first + last
