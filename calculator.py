@@ -9,3 +9,11 @@ def main():
             print(multiplication(ask))
         if '/' in ask:
             print(division(ask))
+
+def addition(numbers):
+    try:
+        first, last = map(int, numbers.split('+'))
+    except ValueError:
+        raise ValueError('Wrong Format')
+
+    return first + last
