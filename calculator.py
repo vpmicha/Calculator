@@ -14,8 +14,8 @@ def main():
 
 def addition(numbers):
     try:
-        first, last = map(int, numbers.split('+').strip())
-    except ValueError('Not specified format'):
+        first, last = map(int, numbers.split('+'))
+    except ValueError('Wrong format'):
         sys.exit()
-    
+
     return first + last
