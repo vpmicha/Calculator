@@ -1,5 +1,3 @@
-import sys
-
 def main():
     while True:
         ask = input('Calculate: ').strip()
@@ -11,11 +9,3 @@ def main():
             print(multiplication(ask))
         if '/' in ask:
             print(division(ask))
-
-def addition(numbers):
-    try:
-        first, last = map(int, numbers.split('+').strip())
-    except ValueError('Not specified format'):
-        sys.exit()
-    
-    return first + last
