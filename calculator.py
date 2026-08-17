@@ -25,3 +25,12 @@ def subtraction(numbers):
         raise ValueError('Wrong Format')
 
     return first - last
+
+def multiplication(numbers):
+    try:
+        first, last = map(int, numbers.split('*'))
+    except ValueError:
+        raise ValueError('Wrong Format')
+
+    return first * last
+
