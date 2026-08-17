@@ -1,7 +1,7 @@
 from calculator import division
 import pytest
 
-def test_addition():
+def test_division():
     assert division('5/2') == 2.5
     assert division('-12/ 1 ') == -12
     assert division('    12 / 1 ') == 12

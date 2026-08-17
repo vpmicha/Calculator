@@ -1,7 +1,7 @@
 from calculator import multiplication
 import pytest
 
-def test_addition():
+def test_multiplication():
     assert multiplication('10*3') == 30
     assert multiplication('3* -12 ') == -36
     assert multiplication('    14 * 1 ') == 14
