@@ -34,3 +34,13 @@ def multiplication(numbers):
 
     return first * last
 
+def division(numbers):
+    try:
+        first, last = map(int, numbers.split('/'))
+        answer = first / last
+    except ValueError:
+        raise ValueError('Wrong Format')
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Can't divide by 0")
+
+    return first / last
