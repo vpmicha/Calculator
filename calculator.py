@@ -44,3 +44,6 @@ def division(numbers):
         raise ZeroDivisionError("Can't divide by 0")
 
     return first / last
+
+if __name__ == '__main__':
+    main()
