@@ -17,3 +17,11 @@ def addition(numbers):
         raise ValueError('Wrong Format')
 
     return first + last
+
+def subtraction(numbers):
+    try:
+        first, last = map(int, numbers.split('-'))
+    except ValueError:
+        raise ValueError('Wrong Format')
+
+    return first - last
